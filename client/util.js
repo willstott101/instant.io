@@ -7,8 +7,8 @@ exports.log = function log (item, unsafe) {
   logHeading.style.display = 'block'
 
   var p = document.createElement('p')
-  if (unsafe) p.textContent = item
-  else p.innerHTML = item
+  if (unsafe) p.innerHTML = item
+  else p.textContent = item
   logElem.appendChild(p)
   return p
 }
